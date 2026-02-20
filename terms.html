@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms &amp; Conditions — ChatGLP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --blue-50: #f0f7ff; --blue-100: #e0efff; --blue-200: #b9ddff;
+            --blue-400: #36a9ff; --blue-500: #0090f0; --blue-600: #0070cc;
+            --white: #ffffff; --gray-50: #f9fafb; --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb; --gray-400: #9ca3af; --gray-500: #6b7280;
+            --gray-600: #4b5563; --gray-700: #374151; --gray-800: #1f2937;
+            --gray-900: #111827;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800); background: var(--white); line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(255,255,255,0.92); backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .nav-inner {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: flex; align-items: center; justify-content: space-between; height: 72px;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif; font-weight: 700;
+            font-size: 1.5rem; color: var(--gray-900); text-decoration: none;
+        }
+        .logo span { color: var(--blue-500); }
+        .nav-links { display: flex; align-items: center; gap: 2rem; }
+        .nav-links a {
+            text-decoration: none; color: var(--gray-600); font-size: 0.9rem; font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--blue-600); }
+
+        .page-header {
+            padding: 8rem 2rem 3rem;
+            background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 100%);
+            text-align: center;
+        }
+        .page-header h1 {
+            font-family: 'Playfair Display', serif; font-size: 2.8rem;
+            font-weight: 700; color: var(--gray-900); letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+        .page-header p {
+            color: var(--gray-500); font-size: 1rem;
+        }
+
+        .legal-content {
+            max-width: 760px; margin: 0 auto; padding: 3rem 2rem 6rem;
+        }
+        .legal-content h2 {
+            font-size: 1.2rem; font-weight: 700; color: var(--gray-900);
+            margin: 2.5rem 0 0.75rem; padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .legal-content p {
+            font-size: 0.95rem; color: var(--gray-600); line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+        .legal-content ul {
+            margin: 0.5rem 0 1rem 1.5rem; list-style: disc;
+        }
+        .legal-content li {
+            font-size: 0.95rem; color: var(--gray-600); line-height: 1.75;
+            margin-bottom: 0.35rem;
+        }
+        .callout {
+            background: var(--blue-50); border-left: 3px solid var(--blue-500);
+            padding: 1rem 1.25rem; border-radius: 0 0.5rem 0.5rem 0;
+            margin: 1rem 0;
+        }
+        .callout p { color: var(--gray-700); margin: 0; font-weight: 500; }
+
+        footer {
+            padding: 3rem 2rem; background: var(--gray-900); color: var(--gray-400);
+        }
+        .footer-inner {
+            max-width: 1200px; margin: 0 auto; display: flex;
+            justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;
+        }
+        .footer-brand {
+            font-family: 'Playfair Display', serif; font-weight: 600;
+            color: var(--white); font-size: 1.1rem;
+        }
+        .footer-brand span {
+            color: var(--gray-500); font-family: 'Inter', sans-serif;
+            font-weight: 400; font-size: 0.85rem; margin-left: 0.5rem;
+        }
+        .footer-links { display: flex; gap: 2rem; }
+        .footer-links a {
+            color: var(--gray-400); text-decoration: none; font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--white); }
+        .footer-copy {
+            width: 100%; text-align: center; padding-top: 2rem; margin-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.8rem; color: var(--gray-500);
+        }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2rem; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .footer-links { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">Chat<span>GLP</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="mailto:founders@askchatglp.com">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Terms &amp; Conditions</h1>
+        <p>Please read these terms carefully before using our Service.</p>
+    </div>
+
+    <div class="legal-content">
+        <h2>1. Overview</h2>
+        <p>These Terms &amp; Conditions ("Terms") govern your use of Ask ChatGLP ("we," "us," "our," or the "Service"). By accessing or using our website, chat interface, or telephone service, you agree to these Terms in full. If you do not agree, do not use the Service.</p>
+
+        <h2>2. Nature of the Service</h2>
+        <p>Our Service provides users with access to educational content and general information related to weight loss, weight loss drugs, nutrition, vitamins, supplements, and related health topics. This includes communication via a telephone hotline and a website-based chat interface.</p>
+        <div class="callout">
+            <p>We are NOT a clinical or medical service. We do not provide diagnosis, treatment, prevention, or cure for any disease or medical condition. This service is strictly educational.</p>
+        </div>
+
+        <h2>3. Educational Use Only</h2>
+        <p>The information provided through our telephone and chat services is intended for educational purposes only. Although curated by medical professionals, the content is not a substitute for professional medical advice, diagnosis, or treatment. Always consult with your physician or qualified healthcare provider before making any decisions related to your health or wellness.</p>
+
+        <h2>4. No Medical Relationship</h2>
+        <p>Engaging with the Service does not establish a provider-patient relationship. You acknowledge and agree that no medical advice is being given, and no treatment is being offered or recommended. We do not prescribe medications, adjust dosages, or provide personalized medical care.</p>
+
+        <h2>5. User Responsibility</h2>
+        <p>By using our Service, you agree to:</p>
+        <ul>
+            <li>Use the information provided solely for your own general knowledge.</li>
+            <li>Not use the Service in place of medical consultation, urgent care, or emergency services.</li>
+            <li>Provide accurate and truthful contact information.</li>
+        </ul>
+        <div class="callout">
+            <p>If you are experiencing a medical emergency, do not use this service — call 911 or your local emergency services immediately.</p>
+        </div>
+
+        <h2>6. Communication Consent</h2>
+        <p>By contacting our Service, you consent to being contacted in a reasonable and appropriate manner through the contact information you provide (e.g., phone number, email). We will not sell your personal information ever. We will not share your personal information unless we have your consent.</p>
+
+        <h2>7. Age Restriction</h2>
+        <p>You must be 18 years or older to use our Service. By using the Service, you represent and warrant that you meet this requirement.</p>
+
+        <h2>8. Payments and Access</h2>
+        <p>Access to certain parts of the Service may require payment. You agree to pay all applicable fees and understand that access to content such as the chat interface and telephone number may be restricted until payment is received.</p>
+
+        <h2>9. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, we disclaim all liability for any direct, indirect, incidental, or consequential damages resulting from your use of the Service, including but not limited to reliance on any information obtained through the Service.</p>
+
+        <h2>10. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. Continued use of the Service constitutes your acceptance of the updated Terms.</p>
+
+        <h2>11. Governing Law</h2>
+        <p>These Terms shall be governed by the laws of the state or country in which we operate, without regard to its conflict of law provisions.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>If you have any questions or concerns about these Terms, please contact us at <a href="mailto:founders@askchatglp.com" style="color: var(--blue-500); text-decoration: none; font-weight: 500;">founders@askchatglp.com</a>.</p>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">Chat<span style="color: #36a9ff;">GLP</span><span>by Dagny Health</span></div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="mailto:founders@askchatglp.com">Contact</a>
+            </div>
+            <div class="footer-copy">&copy; 2025 Dagny Health. All rights reserved. ChatGLP is not a medical provider and does not replace professional medical advice.</div>
+        </div>
+    </footer>
+</body>
+</html>
